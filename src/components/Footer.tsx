@@ -2,41 +2,24 @@ const Footer = () => {
   return (
     <footer className="bg-secondary py-12 mt-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center gap-8">
           <div className="space-y-4">
             <div className="text-2xl font-bold text-primary">
               QuickDelivery
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground max-w-md">
               Fast, reliable delivery service across Jordan for food, groceries, and pharmacy needs.
             </p>
           </div>
           
-          <div>
-            <h3 className="font-semibold mb-4 text-secondary-foreground">Services</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#food" className="hover:text-primary transition-smooth">Food Delivery</a></li>
-              <li><a href="#grocery" className="hover:text-primary transition-smooth">Grocery Shopping</a></li>
-              <li><a href="#pharmacy" className="hover:text-primary transition-smooth">Pharmacy Services</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold mb-4 text-secondary-foreground">Support</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#help" className="hover:text-primary transition-smooth">Help Center</a></li>
-              <li><a href="#contact" className="hover:text-primary transition-smooth">Contact Us</a></li>
-              <li><a href="#faq" className="hover:text-primary transition-smooth">FAQ</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold mb-4 text-secondary-foreground">Legal</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#privacy" className="hover:text-primary transition-smooth">Privacy Policy</a></li>
-              <li><a href="#terms" className="hover:text-primary transition-smooth">Terms & Conditions</a></li>
-              <li><a href="#cookies" className="hover:text-primary transition-smooth">Cookie Policy</a></li>
-            </ul>
+          <div className="flex flex-wrap gap-8 text-muted-foreground">
+            <a href="#food" className="hover:text-primary transition-smooth">Food Delivery</a>
+            <a href="#grocery" className="hover:text-primary transition-smooth">Grocery Shopping</a>
+            <a href="#pharmacy" className="hover:text-primary transition-smooth">Pharmacy Services</a>
+            <a href="#help" className="hover:text-primary transition-smooth">Help Center</a>
+            <a href="#contact" className="hover:text-primary transition-smooth">Contact Us</a>
+            <a href="/privacy-policy" className="hover:text-primary transition-smooth">Privacy Policy</a>
+            <a href="/terms-and-conditions" className="hover:text-primary transition-smooth">Terms & Conditions</a>
           </div>
         </div>
         
